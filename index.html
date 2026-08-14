@@ -18,6 +18,7 @@
 <link rel="shortcut icon" href="./favicon/favicon.ico" />
 <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png" />
 <link rel="manifest" href="./favicon/site.webmanifest" />
+<link rel="preload" as="image" href="./assets/images/hero-photo.webp" fetchpriority="high">
 <link rel="preload" href="./assets/fonts/ibm-plex-sans-variable.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="./assets/fonts/ibm-plex-mono-500.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="./assets/fonts/ibm-plex-mono-600.woff2" as="font" type="font/woff2" crossorigin>
@@ -401,7 +402,7 @@ footer{
 
 <nav class="nav" id="nav">
   <a class="logo" href="#top">
-    <img src="./assets/images/logo.png" alt="AIXON"/>
+    <img src="./assets/images/logo.png" width="919" height="292" fetchpriority="high" alt="AIXON"/>
   </a>
   <ul>
     <li><a href="#technology">Technology</a></li>
@@ -423,7 +424,7 @@ footer{
       </div>
     </div>
     <div class="hero-photo reveal">
-      <img src="./assets/images/hero-photo.png" alt="AIXON precision membrane for scalable exosome isolation"/>
+      <img src="./assets/images/hero-photo.webp" width="1200" height="896" fetchpriority="high" alt="AIXON precision membrane for scalable exosome isolation"/>
     </div>
   </div>
   <div class="scroll-cue"></div>
@@ -542,17 +543,17 @@ footer{
 
     <p class="data-footnote">Study design: MDA-MB-231 conditioned-medium exosome isolation, internal R&amp;D data. AIXON figures reflect the AIXON 47mm membrane with backing support layer. Relative purity indexed to the ultracentrifugation baseline at 100%. Brand D / Brand M / Brand S denote anonymized commercial membrane products benchmarked in the same study. AIXON's raw particle recovery rate (8.72%) trails Brand M and Brand S, which recover more total particles at substantially lower purity — a deliberate trade-off in favor of purity and speed.</p>
   </div>
-</section>
-
-<section class="closing">
-  <img src="./assets/images/closing-photo.jpg" alt=""/>
-  <div class="closing-inner">
-    <p class="quote reveal">Transform your EV workflow today.</p>
-    <div class="closing-actions reveal">
-      <a class="btn btn-primary btn-lg" href="#contact">Get in Touch</a>
+  <section class="closing">
+    <div class="closing-bg">
+      <img src="./assets/images/closing-photo.webp" width="1024" height="572" loading="lazy" alt="A scientist handling samples in a pristine laboratory environment"/>
     </div>
-  </div>
-</section>
+    <div class="closing-inner">
+      <p class="quote reveal">Transform your EV workflow today.</p>
+      <div class="closing-actions reveal">
+        <a class="btn btn-primary btn-lg" href="#contact">Get in Touch</a>
+      </div>
+    </div>
+  </section>
 </main>
 
 <footer id="contact">
@@ -609,7 +610,7 @@ footer{
   <div class="footer-grid">
     <div class="footer-brand">
       <div class="logo">
-        <img src="./assets/images/footer-logo.png" alt="Aixon Bio - Precision Exosome Purification Technology"/>
+        <img src="./assets/images/footer-logo.png" width="919" height="292" loading="lazy" alt="Aixon Bio - Precision Exosome Purification Technology"/>
       </div>
       <p>Precision membrane technology setting a new standard for exosome isolation — from single-use lab isolation to full-scale tangential flow production.</p>
     </div>
