@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIXON Membrane Quick Start Guide</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --black: #000000;
+            --white: #ffffff;
+            --gray: #666666;
+        }
+
+        body {
+            /* 使用 Noto Sans，這也是 IKEA 目前使用的品牌字體家族 */
+            font-family: 'Noto Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--white);
+            color: var(--black);
+            line-height: 1.5;
+            margin: 0;
+            padding: 0;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 30px 20px;
+        }
+
+        /* 頂部 Header 區域 */
+        header {
+            border-bottom: 3px solid var(--black);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        .logo {
+            max-height: 80px;
+            /* 控制 Logo 高度 */
+            width: auto;
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin: 0;
+            letter-spacing: -0.5px;
+            text-transform: uppercase;
+            /* 大寫增加說明書的冷靜感 */
+        }
+
+        .subtitle {
+            font-size: 0.9rem;
+            color: var(--gray);
+            margin-top: 5px;
+        }
+
+        /* 步驟列表設計 */
+        .step-container {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #e0e0e0;
+            /* 步驟間的細分隔線 */
+        }
+
+        .step-container:last-of-type {
+            border-bottom: none;
+        }
+
+        /* 仿說明書的大型編號 */
+        .step-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            line-height: 1;
+            margin-right: 20px;
+            min-width: 35px;
+            text-align: right;
+            color: var(--black);
+        }
+
+        .step-content {
+            flex-grow: 1;
+            padding-top: 5px;
+            /* 微調讓文字與數字頂部對齊 */
+        }
+
+        .step-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin: 0 0 8px 0;
+            text-transform: uppercase;
+        }
+
+        .step-desc {
+            font-size: 0.95rem;
+            margin: 0;
+            color: #333;
+        }
+
+        /* 強調關鍵數值的樣式 */
+        .highlight {
+            font-weight: 700;
+            color: var(--black);
+        }
+
+        /* 備註與小提示 */
+        .note {
+            display: inline-block;
+            font-size: 0.85rem;
+            font-style: italic;
+            color: var(--gray);
+            margin-top: 8px;
+            padding-left: 10px;
+            border-left: 2px solid var(--black);
+        }
+
+        /* 底部聯絡資訊區塊 */
+        .footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 3px solid var(--black);
+            font-size: 0.9rem;
+        }
+
+        .ruo-badge {
+            display: inline-block;
+            font-size: 0.8rem;
+            font-weight: 400;
+            font-style: italic;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .contact-title {
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin: 0 0 10px 0;
+            text-transform: uppercase;
+        }
+
+        .footer p {
+            margin: 0 0 10px 0;
+            color: #333;
+        }
+
+        .website-link {
+            color: var(--black);
+            font-weight: 700;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <!-- 提醒：這裡的 src 路徑假設您將圖片放在上層的 assets 資料夾中 -->
+            <img src="Aixon_JSEV2026.png" alt="AIXON Logo" class="logo">
+            <h1>Quick Start Guide</h1>
+            <div class="subtitle">AIXON EV Isolation Membrane • 47mm</div>
+        </header>
+
+        <main>
+            <div class="step-container">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <h2 class="step-title">Assembly</h2>
+                    <p class="step-desc">Place the membrane securely into a compatible filtration apparatus. Ensure
+                        tight seal before applying vacuum.</p>
+                    <div class="note">Recommended working vacuum: &lt; 200 mmHg</div>
+                </div>
+            </div>
+
+            <div class="step-container">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <h2 class="step-title">Wetting</h2>
+                    <p class="step-desc">Pour <span class="highlight">4 mL of PBS</span> onto the membrane and aspirate
+                        completely to wet the surface.</p>
+                </div>
+            </div>
+
+            <div class="step-container">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <h2 class="step-title">Loading</h2>
+                    <p class="step-desc">Pour sample onto the membrane and aspirate completely.</p>
+                    <div class="note">Recommended loading volume is &lt; 25 mL, subject to sample characteristics.</div>
+                </div>
+            </div>
+
+            <div class="step-container">
+                <div class="step-number">4</div>
+                <div class="step-content">
+                    <h2 class="step-title">Washing</h2>
+                    <p class="step-desc">Pour <span class="highlight">2 mL of PBS</span> onto the membrane and aspirate.
+                        Repeat this step once more.</p>
+                </div>
+            </div>
+
+            <div class="step-container">
+                <div class="step-number">5</div>
+                <div class="step-content">
+                    <h2 class="step-title">Recovery</h2>
+                    <p class="step-desc">Add <span class="highlight">250 &mu;L of PBS</span>. Pipette up and down <span
+                            class="highlight">20-30 times</span>, then transfer the liquid to a microtube. Repeat this
+                        step once more and pool the liquid.</p>
+                </div>
+            </div>
+
+            <div class="step-container">
+                <div class="step-number">6</div>
+                <div class="step-content">
+                    <h2 class="step-title">Analysis</h2>
+                    <p class="step-desc">You should have approx <span class="highlight">500 &mu;L</span> of isolated EVs
+                        ready for Nanoparticle Tracking Analysis (NTA) or downstream applications.</p>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="ruo-badge">*For Research Use Only (RUO)</div>
+            <h3 class="contact-title">Contact Us</h3>
+            <p>We'd love to hear about your experience with this sample. For questions regarding products, purchasing,
+                or collaborations, please reach out to us:</p>
+            <a href="https://aixon.bio/" class="website-link">aixon.bio</a>
+        </footer>
+    </div>
+</body>
+
+</html>
