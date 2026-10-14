@@ -63,6 +63,20 @@
             margin-top: 5px;
         }
 
+        /* Overview 方法示意圖 */
+        .methods-overview {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .methods-diagram {
+            width: 100%;
+            max-width: 460px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
         /* 步驟列表設計 */
         .step-container {
             display: flex;
@@ -99,6 +113,14 @@
             font-weight: 700;
             margin: 0 0 8px 0;
             text-transform: uppercase;
+        }
+
+        .optional-badge {
+            font-size: 0.85rem;
+            font-weight: 400;
+            color: var(--gray);
+            text-transform: none;
+            margin-left: 6px;
         }
 
         .step-desc {
@@ -169,9 +191,22 @@
             <img src="Aixon_JSEV2026.png" alt="AIXON Logo" class="logo">
             <h1>Quick Start Guide</h1>
             <div class="subtitle">AIXON EV Isolation Membrane • 47mm</div>
+            <div class="methods-overview">
+                <img src="methods.svg" alt="AIXON Membrane Workflow Overview" class="methods-diagram">
+            </div>
         </header>
 
         <main>
+            <div class="step-container step-optional">
+                <div class="step-number">0</div>
+                <div class="step-content">
+                    <h2 class="step-title">Pre-Rinse <span class="optional-badge">(Optional)</span></h2>
+                    <p class="step-desc">If desired, briefly soak the membrane in ddH₂O to wash and rinse it prior to
+                        assembly.</p>
+                    <div class="note">Note: This step is optional and can be skipped.</div>
+                </div>
+            </div>
+
             <div class="step-container">
                 <div class="step-number">1</div>
                 <div class="step-content">
